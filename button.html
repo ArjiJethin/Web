@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/jpg"
+      href="Data/Images/photo_2024-04-19_21-22-52.jpg"
+    />
+    <title>Button</title>
+  </head>
+
+  <body>
+    <a
+      href="https://i.kym-cdn.com/photos/images/original/000/890/053/f87.gif"
+      target="_blank"
+      title="hyperlink"
+    >
+      <button
+        style="
+          font-size: 3vh;
+          background-color: aqua;
+          color: aliceblue;
+          border: 2px solid gold;
+          padding: 10px 20px;
+          cursor: pointer;
+          border-radius: 50px;
+        "
+      >
+        Press
+      </button>
+    </a>
+
+    <br />
+    <br />
+
+    <button
+      onclick="toggleText()"
+      style="
+        font-size: 3vh;
+        background-color: cadetblue;
+        color: aquamarine;
+        border: 2px solid black;
+        padding: 10px 10px;
+        border-radius: 50px;
+        cursor: pointer;
+      "
+    >
+      Java Script
+    </button>
+
+    <p id="tgfunc">Toggle Text</p>
+    <script>
+      function toggleText() {
+        document.getElementById("tgfunc").innerHTML = "Hehe";
+      }
+    </script>
+  </body>
+</html>
