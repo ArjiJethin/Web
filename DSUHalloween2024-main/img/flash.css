@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  cursor: none;
+}
+
+p {
+  font-size: 1em;
+  text-align: justify;
+  line-height: 1.8em;
+  padding: 0.2em;
+}
+
+#flashlight {
+  --Xpos: 80vw;
+  --Ypos: 80vh;
+}
+
+#flashlight > img {
+  width: 80vh; 
+  height: 55vh;
+  position: absolute;
+  top: calc(var(--Ypos) - 225px); 
+  left: calc(var(--Xpos) - 310px);
+  opacity: 0.6;
+  border: transparent;
+}
+
+#flashlight:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  pointer-events: none;
+  background: radial-gradient(
+      circle 9em at var(--Xpos) var(--Ypos),
+      rgba(242, 6, 6, 0.633),
+      rgba(0, 0, 0, 0.974)
+  );
+}
+
+@media screen and (max-width: 500px) {
+  body {
+      font-size: 14px;
+  }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/dsu logo.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>DSU</title>
+  </head>
+  <body>
+    <img src="img/shape-bg.png" alt="" class="shape__bg" />
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="" class="nav__logo">
+          <img src="img/dsu logo.png" alt="logo image" />DSU
+        </a>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="home section" id="home">
+        <div class="shape__small"></div>
+        <div class="shape__big"></div>
+        <div class="home__container container grid">
+          <div class="home__data">
+            <h1 class="home__title">
+              <span>Halloween</span>
+              <span class="Deez">Week at DSU</span>
+              <img src="img/stars1.png" alt="home image" class="home__title-img-1" />
+              <img src="img/stars1.png" alt="home image" class="home__title-img-2" />
+            </h1>
+            <p class="home__description">Sign Up now to join the event</p>
+            <div class="login-section">
+              <form action="home.html" method="get">
+                <label for="email">Enter Valid Email</label>
+                <input type="email" id="email" name="email" class="button-1" required /><br />
+                <label for="username">Enter Username</label>
+                <input type="text" id="username" name="username" class="button-1" required /><br />
+                <label for="password">Enter a Password</label>
+                <input type="password" id="password" name="password" class="button-1" required /><br /><br />
+                <button type="submit" class="button">Sign Up</button>
+              </form>
+              <br />
+              <p>
+                Already registered? <a href="index.html" style="color: red;">Sign in</a>
+              </p>
+            </div>
+            <img src="img/jack o lantern.png" alt="home image" class="home__img floating-imgs" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="scrollreveal.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

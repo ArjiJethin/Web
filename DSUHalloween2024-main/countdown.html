@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/dsu logo.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>DSU</title>
+  </head>
+  <body>
+    <img src="img/shape-bg.png" alt="" class="shape__bg" />
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="" class="nav__logo">
+          <img src="img/dsu logo.png" alt="logo image" />DSU 
+        </a>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="home section" id="home">
+        <div class="shape__small"></div>
+        <div class="shape__big"></div>
+        <div class="home__container container grid">
+          <div class="home__data">
+            <h1 class="home__title">
+              <span>Halloween</span>
+              <span class="Deez">Week at DSU</span>
+              <img src="img/stars1.png" alt="home image" class="home__title-img-1"/>  
+              <img src="img/stars1.png" alt="home image" class="home__title-img-2"/>
+            </h1>
+            <h1>Countdown to October 31st</h1><br>
+            <div class="home__data login-section">
+                <p>Time Left:</p>
+                <div id="countdown"></div> <br>
+                <a href="home.html" class="button" style="color: rgb(110, 31, 31);">Back to home</a>
+            </div>
+        <img
+            src="img/jack o lantern.png"
+            alt="home image"
+            class="home__img floating-imgs"
+          />
+      </section>
+      <script src="main.js"></script>
+      <script src="scrollreveal.min.js"></script>
+    <script>
+        const countDownDate = new Date("October 31, 2024 00:00:00").getTime();
+        const countdownFunction = setInterval(function() {
+          const now = new Date().getTime();
+          const distance = countDownDate - now;
+          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+          document.getElementById("countdown").innerHTML = days + "d " + hours + "h " +
+            minutes + "m " + seconds + "s ";
+          if (distance < 0) {
+            clearInterval(countdownFunction);
+            document.getElementById("countdown").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+      </script>
+  </body>
+</html>
