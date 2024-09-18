@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marquee Image</title>
+    <link
+      rel="icon"
+      type="image/gif"
+      href="../../Data/Images/dazzle-two-books-with-a-bookmark.gif"
+    />
+    <style>
+      body {
+        padding: 10px 30px 30px 30px;
+        overflow: hidden; /* Prevent scrollbars */
+      }
+
+      @keyframes swipe {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%); /* Move left half of the total width */
+        }
+      }
+
+      .marquee-container {
+        display: flex;
+        overflow: hidden; /* Hide overflow */
+        width: 100%;
+      }
+
+      .marquee {
+        display: flex;
+        animation: swipe 10s linear infinite; /* Adjust speed here */
+      }
+
+      .marquee img {
+        height: 150px;
+        margin: 0; /* Remove default margin */
+      }
+
+      .images {
+        display: flex; /* Ensure images are in a row */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Image in Marquee</h1>
+    <hr style="background-color: cyan; height: 1px" />
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+      sint, deleniti quae...
+    </p>
+    <hr />
+    <div class="marquee-container">
+      <div class="marquee">
+        <div class="images">
+          <img src="../../Data/Images/kingdom-1188.gif" alt="Marquee Image" />
+          <img src="../../Data/Images/kingdom-1188.gif" alt="Marquee Image" />
+          <img src="../../Data/Images/kingdom-1188.gif" alt="Marquee Image" />
+          <img src="../../Data/Images/kingdom-1188.gif" alt="Marquee Image" />
+          <img src="../../Data/Images/kingdom-1188.gif" alt="Marquee Image" />
+          <img src="../../Data/Images/kingdom-1188.gif" alt="Marquee Image" />
+          <img src="../../Data/Images/kingdom-1188.gif" alt="Marquee Image" />
+          <img src="../../Data/Images/kingdom-1188.gif" alt="Marquee Image" />
+          <img src="../../Data/Images/kingdom-1188.gif" alt="Marquee Image" />
+        </div>
+        <div class="images">
+          <!-- Duplicate images for continuous effect -->
+          <img src="../../Data/Images/kingdom-1188.gif" alt="Marquee Image" />
+          <img src="../../Data/Images/kingdom-1188.gif" alt="Marquee Image" />
+          <img src="../../Data/Images/kingdom-1188.gif" alt="Marquee Image" />
+          <img src="../../Data/Images/kingdom-1188.gif" alt="Marquee Image" />
+          <img src="../../Data/Images/kingdom-1188.gif" alt="Marquee Image" />
+          <img src="../../Data/Images/kingdom-1188.gif" alt="Marquee Image" />
+          <img src="../../Data/Images/kingdom-1188.gif" alt="Marquee Image" />
+          <img src="../../Data/Images/kingdom-1188.gif" alt="Marquee Image" />
+          <img src="../../Data/Images/kingdom-1188.gif" alt="Marquee Image" />
+        </div>
+      </div>
+    </div>
+    <hr />
+  </body>
+</html>
