@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="../Data/Images/icons8-html-120.png"
+    />
+
+    <style>
+      body {
+        padding: 200px;
+        font-family: cursive;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 align="center">Forms in HTML</h1>
+    <form
+      align="center"
+      action="url"
+      method="post"
+      accept-charset="UTF-16"
+      autocomplete="off"
+      enctype="application/x-www-form-urlencoded"
+    >
+      <label for="fname">First Name:</label>
+      <input type="text" placeholder="First Name" name="" id="fname" />
+      <br />
+      <br />
+      <label for="sname">Last Name: </label>
+      <input type="text" placeholder="Last Name" name="" id="sname" />
+      <br />
+      <br />
+      <label for="dob">Date of Birth: </label>
+      <input type="date" name="" id="dob" /> <br /><br />
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+
+      <select name="editors" id="">
+        <option value="vscode">Visual Studio Code</option>
+        <option value="Sublime">Sublime Text</option>
+      </select>
+    </form>
+  </body>
+</html>
