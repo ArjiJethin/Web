@@ -2,4 +2,29 @@ body {
     background-color: black;
     color: rgb(244, 246, 238);
     font-family:cursive;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+h1{
+    align-self: center;
+    color: aqua;
+    border: gold 1px solid;
+}
+
+h2{
+    border: gold 1px solid;
+    color: aquamarine;
+}
+
+div{
+    border: gold 1px solid;
+    color: blueviolet;
+}
+
+span{
+    
+    border: gold 1px solid;
+    color: darkmagenta;
 }
