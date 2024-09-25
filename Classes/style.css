@@ -24,6 +24,7 @@ div {
 }
 
 span {
+  margin-left: 46%;
   border: gold 1px solid;
   color: darkmagenta;
 }
