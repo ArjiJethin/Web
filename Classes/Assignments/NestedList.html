@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nested List</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 24px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      ol {
+        color: #333;
+        margin-left: 30px;
+      }
+
+      ol ol {
+        margin-left: 30px;
+      }
+
+      ol li {
+        margin: 5px 0;
+      }
+
+      ol[type="I"] > li {
+        font-weight: bold;
+        margin-top: 10px;
+      }
+
+      ol[type="A"] > li {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Nested List</h1>
+      <ol type="I">
+        <li>
+          Background Skills
+          <ol type="A">
+            <li>Unix Commands</li>
+            <li>Vim Test Editors</li>
+          </ol>
+        </li>
+        <li>
+          HTML
+          <ol type="A">
+            <li>Minimal Page</li>
+            <li>Headings</li>
+            <li>Elements</li>
+            <li>
+              Lists
+              <ol type="i">
+                <li>Unordered</li>
+                <li>Ordered</li>
+                <li>Definition</li>
+                <li>Nested</li>
+              </ol>
+            </li>
+            <li>
+              Links
+              <ol type="i">
+                <li>Absolute</li>
+                <li>Relative</li>
+              </ol>
+            </li>
+            <li>Images</li>
+          </ol>
+        </li>
+        <li>
+          CSS
+          <ol type="A">
+            <li>Anatomy</li>
+            <li>
+              Basic Selectors
+              <ol type="i">
+                <li>Element</li>
+                <li>Class</li>
+                <li>ID</li>
+                <li>Group</li>
+              </ol>
+            </li>
+            <li>The DOM</li>
+            <li>Advanced Selectors</li>
+            <li>Box Model</li>
+          </ol>
+        </li>
+        <li>
+          Programming
+          <ol type="A">
+            <li>Python</li>
+            <li>JavaScript</li>
+          </ol>
+        </li>
+        <li>
+          Database
+          <ol type="A">
+            <li>Flat File</li>
+            <li>Relational</li>
+          </ol>
+        </li>
+      </ol>
+    </div>
+  </body>
+</html>

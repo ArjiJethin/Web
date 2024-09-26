@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link
+      rel="icon"
+      href="../../Data/Images/icons8-html-120.png"
+      type="image/png"
+    />
+
+    <style>
+      body {
+        font-family: cursive;
+        background-color: #f2f2f2;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: 10% 25% 0% 25%;
+      }
+    </style>
+  </head>
+  <body>
+    <table border="2" width="100%">
+      <tr>
+        <th colspan="2">Registration Form</th>
+      </tr>
+      <tr>
+        <td>Student Name:</td>
+        <td><input type="text" required /></td>
+      </tr>
+      <tr>
+        <td>Father's Name:</td>
+        <td><input type="email" required /></td>
+      </tr>
+      <tr>
+        <td>Mother's Name:</td>
+        <td><input type="password" required /></td>
+      </tr>
+      <tr>
+        <td>Date of Birth:</td>
+        <td>
+          <input type="date" required />
+        </td>
+      </tr>
+      <tr>
+        <td>Gender:</td>
+        <td>
+          <input type="radio" name="gender" value="male" required /> Male
+          <input type="radio" name="gender" value="female" required /> Female
+        </td>
+      </tr>
+      <tr>
+        <td>Mobile Number:</td>
+        <td><input type="tel" required /></td>
+      </tr>
+      <tr>
+        <td>Address:</td>
+        <td><textarea required></textarea></td>
+      </tr>
+      <tr>
+        <td>State:</td>
+        <td><input type="text" required /></td>
+      </tr>
+      <tr>
+        <td>City:</td>
+        <td>
+          <input type="text" required />
+        </td>
+        <tr>
+            <td align="center" colspan="2"><button  type="submit" name="submit">Submit</button></td>
+        </tr>
+      </tr>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form for O Level Course</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+      }
+
+      .form-container {
+        width: 80%;
+        margin: 20px auto;
+        background-color: white;
+        padding: 20px;
+        border: 1px solid #ccc;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      form {
+        width: 100%;
+      }
+
+      .section {
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        background-color: #00aaff;
+        color: white;
+        padding: 10px;
+      }
+
+      .form-group {
+        display: flex;
+        margin: 10px 0;
+      }
+
+      label {
+        width: 30%;
+        padding-right: 10px;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="date"],
+      select,
+      input[type="file"] {
+        width: 70%;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+
+      input[type="radio"] {
+        margin-left: 10px;
+      }
+
+      button {
+        background-color: #00aaff;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+        margin-right: 10px;
+      }
+
+      button:hover {
+        background-color: #0077cc;
+      }
+
+      button[type="button"] {
+        background-color: #ccc;
+      }
+
+      button[type="button"]:hover {
+        background-color: #999;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Registration Application Form for Course - O Level</h1>
+
+      <form action="#" method="post">
+        <div class="section">
+          <h2>1. Registration Form</h2>
+          <div class="form-group">
+            <label
+              >1.0 Have you got an online reference number for enrollment with
+              NIELIT?</label
+            >
+            <input type="radio" name="reference" value="Yes"> Yes</input>
+            <input type="radio" name="reference" value="No" /> No</input>
+          </div>
+          <div class="form-group">
+            <label>1.1 Registration sought for:</label>
+            <input
+              type="text"
+              name="registration_sought"
+              value="O LEVEL"
+              disabled
+            />
+          </div>
+          <div class="form-group">
+            <label>1.2 Applied As:</label>
+            <input type="radio" name="applied_as" value="Direct Candidate" />
+            Direct Candidate
+            <input type="radio" name="applied_as" value="Through Institute" />
+            Through Institute
+          </div>
+          <div class="form-group">
+            <label>1.3 Exam Cycle:</label>
+            <input type="text" name="exam_cycle" value="July, 2023" />
+          </div>
+          <div class="form-group">
+            <label>1.4 Registration Fee Will Be Paid By:</label>
+            <input type="text" name="registration_fee_paid_by" />
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>2. Applicant's Personal Details</h2>
+          <div class="form-group">
+            <label>2.1 Applicant's Full Name:</label>
+            <input type="text" name="full_name" />
+          </div>
+          <div class="form-group">
+            <label>2.2 Care Of:</label>
+            <input type="text" name="care_of" />
+          </div>
+          <div class="form-group">
+            <label>2.2.1 Father's Name:</label>
+            <input type="text" name="fathers_name" />
+          </div>
+          <div class="form-group">
+            <label>2.2.2 Mother's Name:</label>
+            <input type="text" name="mothers_name" />
+          </div>
+          <div class="form-group">
+            <label>2.3 Gender:</label>
+            <select name="gender">
+              <option>Male</option>
+              <option>Female</option>
+              <option>Others</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>2.4 Date of Birth:</label>
+            <input type="date" name="dob" />
+          </div>
+          <div class="form-group">
+            <label>2.5 Marital Status:</label>
+            <select name="marital_status">
+              <option>Single</option>
+              <option>Married</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>2.6 Category:</label>
+            <select name="category">
+              <option>General</option>
+              <option>SC</option>
+              <option>ST</option>
+              <option>OBC</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>2.7 Handicapped:</label>
+            <input type="radio" name="handicapped" value="Yes" /> Yes
+            <input type="radio" name="handicapped" value="No" /> No
+          </div>
+          <div class="form-group">
+            <label>2.8 Ex-Serviceman:</label>
+            <input type="radio" name="ex_serviceman" value="Yes" /> Yes
+            <input type="radio" name="ex_serviceman" value="No" /> No
+          </div>
+          <div class="form-group">
+            <label>2.9 EWS:</label>
+            <input type="radio" name="ews" value="Yes" /> Yes
+            <input type="radio" name="ews" value="No" /> No
+          </div>
+          <div class="form-group">
+            <label>2.10 Religion:</label>
+            <input type="text" name="religion" />
+          </div>
+        </div>
+
+        <!-- Section 3: Contact Details -->
+        <div class="section">
+          <h2>3. Contact Details</h2>
+          <div class="form-group">
+            <label>3.1 Mobile Number:</label>
+            <input type="text" name="mobile_number" />
+          </div>
+          <div class="form-group">
+            <label>3.2 Email ID:</label>
+            <input type="email" name="email" />
+          </div>
+          <div class="form-group">
+            <label>3.3 Address Line 1:</label>
+            <input type="text" name="address_line_1" />
+          </div>
+          <div class="form-group">
+            <label>3.4 Address Line 2:</label>
+            <input type="text" name="address_line_2" />
+          </div>
+          <div class="form-group">
+            <label>3.5 City:</label>
+            <input type="text" name="city" />
+          </div>
+          <div class="form-group">
+            <label>3.6 State:</label>
+            <select name="state">
+              <option>Select</option>
+              <option>State 1</option>
+              <option>State 2</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>3.7 Pin Code:</label>
+            <input type="text" name="pin_code" />
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>4. Educational/Qualifications Details</h2>
+          <div class="form-group">
+            <label>4.1 Highest Educational Qualification:</label>
+            <select name="qualification">
+              <option>Select</option>
+              <option>High School</option>
+              <option>Graduation</option>
+              <option>Post-Graduation</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>4.2 Year of Passing:</label>
+            <input type="text" name="year_of_passing" />
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>5. Identification Details</h2>
+          <div class="form-group">
+            <label>5.1 Aadhaar Card Number:</label>
+            <input type="text" name="aadhaar_number" />
+          </div>
+          <div class="form-group">
+            <label>5.2 Upload Photo:</label>
+            <input type="file" name="upload_photo" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <button type="submit">Submit</button>
+          <button type="button">Back</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
