@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WTF!</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="../../Data/Images/icons8-space-96.png"
+    />
+    <style>
+      body {
+        background-image: url(../../Data/Images/wp5569710-night-sky-4k-wallpapers.jpg);
+        background-size: cover;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        overflow-y: hidden;
+      }
+
+      .ground {
+        width: 100%;
+        height: 15%;
+        background-color: black;
+        position: fixed;
+        top: 87%;
+      }
+
+      #Dude {
+        position: relative;
+        top: 60%;
+        z-index: 1;
+        filter: brightness(0.85);
+      }
+
+      .Rocket {
+        position: absolute;
+        bottom: -100px; /* Start off-screen */
+        left: 35%;
+        animation: moveUp 15s linear infinite;
+        height: 80px;
+        opacity: 70%;
+      }
+
+      @keyframes moveUp {
+        0% {
+          bottom: 30px; /* Start position */
+        }
+        100% {
+          bottom: 100%; /* End position */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <marquee id="Dude" scrollamount="12" direction="left">
+      <img
+        id="Dude"
+        src="../../Data/Images/walking-1.gif"
+        height="250px"
+        alt="More hell"
+      />
+      <img
+        id="Dude"
+        style="position: relative; top: 90%; margin-bottom: 19px"
+        src="../../Data/Images/doggo.gif"
+        height="100px"
+        alt="Most Hell"
+      />
+    </marquee>
+
+    <img
+      class="Rocket"
+      src="../../Data/Images/flame-822.gif"
+      alt="Mostest Hell"
+    />
+
+    <div class="ground"></div>
+  </body>
+</html>
