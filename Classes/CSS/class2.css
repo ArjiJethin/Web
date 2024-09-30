@@ -1,0 +1,18 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgba(48, 47, 47, 0.297);
+  box-shadow: 0 0 10px;
+}
