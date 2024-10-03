@@ -1,0 +1,8 @@
+div p {
+  color: red;
+  font-size: 50px;
+}
+p {
+  color: green;
+  font-size: 25px;
+}
