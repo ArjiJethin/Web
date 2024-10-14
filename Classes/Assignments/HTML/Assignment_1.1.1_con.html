@@ -12,9 +12,7 @@
     <style>
       body {
         padding: 10px 30px 30px 30px;
-        overflow: hidden; /* Prevent scrollbars */
-        background-color: black;
-        color: white;
+        overflow: hidden;
       }
 
       @keyframes swipe {
@@ -22,28 +20,28 @@
           transform: translateX(0);
         }
         100% {
-          transform: translateX(-50%); /* Move left half of the total width */
+          transform: translateX(-50%);
         }
       }
 
       .marquee-container {
         display: flex;
-        overflow: hidden; /* Hide overflow */
+        overflow: hidden;
         width: 100%;
       }
 
       .marquee {
         display: flex;
-        animation: swipe 0.00001s linear infinite; /* Adjust speed here */
+        animation: swipe 0.00001s linear infinite;
       }
 
       .marquee img {
         height: 150px;
-        margin: 0; /* Remove default margin */
+        margin: 0;
       }
 
       .images {
-        display: flex; /* Ensure images are in a row */
+        display: flex;
       }
     </style>
   </head>
