@@ -1,0 +1,26 @@
+.form-container {
+  width: 300px;
+  margin: auto;
+  padding: 20px auto;
+}
+
+.form-container label {
+  margin-right: 30px auto;
+  margin-bottom: 10px;
+}
+
+.form-container label {
+  width: 80px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="date"],
+.form-container input[type="tel"],
+.form-container select {
+  width: calc(100% - 90px);
+  padding: 5px;
+  margin-bottom: 10px;
+}

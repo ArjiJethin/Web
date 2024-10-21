@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        text-align: center;
+        font-family: Arial, sans-serif;
+        margin: 10px;
+        align-items: center;
+        justify-self: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 align="center">FORMS</h1>
+    <form>
+      <label for="FirstName">First Name:</label>
+      <input
+        type="text"
+        id="FirstName"
+        name="FirstName"
+        placeholder="First Name"
+        required
+        autofocus
+      />
+      <br />
+      <label for="SecondName">Second Name:</label>
+      <input
+        type="text"
+        id="SecondName"
+        name="SecondName"
+        placeholder="Second Name"
+        disabled
+      />
+      <br />
+      <label for="Username">Username:</label>
+      <input
+        type="text"
+        id="Username"
+        name="Username"
+        placeholder="Username"
+        size="20"
+        required
+        autocomplete="on"
+      />
+      <br />
+      <label for="Pwd">Password:</label>
+      <input type="password" id="pwd" name="pwd" required />
+      <br />
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>
