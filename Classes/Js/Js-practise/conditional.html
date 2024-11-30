@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="icon" href="../../../Data/Images/icons8-html-120.png" />
+    </head>
+    <body>
+        <script type="text/JavaScript">
+            let a = prompt('Enter value for A:');
+            a = parseInt(a);
+            let b = prompt('Enter value for B:');
+            b = parseInt(b);
+            if (a>b) {
+                document.writeln('A is greater than B <br>');
+            } else if (a<b) {
+                document.writeln('B is greater than A <br>');
+            } else {
+                document.writeln('A is equal to B <br>');
+            }
+
+            let day = prompt('Enter day:');
+            day = parseInt(day);
+            switch (day) {
+                case 1:
+                    document.writeln('Monday');
+                    break;
+                case 2:
+                    document.writeln('Tuesday');
+                    break;
+                case 3:
+                    document.writeln('Wednesday');
+                    break;
+                case 4:
+                    document.writeln('Thursday');
+                    break;
+                case 5:
+                    document.writeln('Friday');
+                    break;
+                case 6:
+                    document.writeln('Saturday');
+                    break;
+                case 7:
+                    document.writeln('Sunday');
+                    break;
+                default:
+                    document.writeln('Invalid day');
+                    break;
+            }
+        </script>
+    </body>
+</html>
