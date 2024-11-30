@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Constructor</title>
+        <link rel="icon" href="../../../Data/Images/icons8-html-120.png" />
+    </head>
+    <body>
+        <script type="text/javascript">
+            function Dog(name, color, breed) {
+                this.name = name;
+                this.color = color;
+                this.breed = breed;
+                this.bark = function () {
+                    return "Bark!";
+                };
+            }
+
+            // Create a new dog object
+            let myDog = new Dog("Rover", "white", "Poodle");
+
+            // Output data to the console
+            console.log("Name:", myDog.name);
+            console.log("Color:", myDog.color);
+            console.log("Breed:", myDog.breed);
+            console.log("Bark:", myDog.bark());
+
+            // Output data to the web page
+            document.body.innerHTML = `
+                <div class="output">
+                    <strong>Name:</strong> ${myDog.name} <br>
+                    <strong>Color:</strong> ${myDog.color} <br>
+                    <strong>Breed:</strong> ${myDog.breed} <br>
+                    <strong>Bark:</strong> ${myDog.bark()}
+                </div>
+            `;
+
+            let str = "This is JavaScript Programming Language";
+            document.writeln("<br> Length of String:", str.length);
+            document.writeln("<br>First character of String:", str.charAt(0));
+            document.writelm(
+                "<br>Index of the character of 'P' is:",
+                str.indexOf("P")
+            );
+            str1 = str.substring(7);
+            document.writeln("<br>SubString:", str1);
+        </script>
+    </body>
+</html>
