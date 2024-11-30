@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Loops</title>
+        <link rel="icon" href="../../../Data/Images/icons8-html-120.png" />
+    </head>
+    <body>
+        <script type="text/JavaScript">
+            let array = new Array(1,2,3,4,5,6,7,8,9,10);
+            for (let i = 0; i < array.length; i++) {
+                document.writeln(array[i]+" ");
+            }
+            List = ['Apple','Banana','Cherry','Dates'];
+            for (let items of List) {
+                document.writeln("<br>"+items);
+                console.log(items);
+            }
+            let welcome = () => document.writeln("<br>Hey there!");
+            let showMessaege = (message) => document.writeln("<br>"+message);
+            welcome();
+            showMessaege("Hello World!");
+            let colors = new Array('Red','Green','Blue','Yellow','Orange','Purple');
+            colors.forEach(item => document.writeln("<br>"+item));
+        </script>
+    </body>
+</html>
