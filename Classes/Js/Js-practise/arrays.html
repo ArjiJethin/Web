@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script type="text/JavaScript">
+            let Lists = ['Apple','Banana','Cherry',];
+            let subjects = new Array('Maths','Physics','Chemistry');
+            document.writeln("<br>Lists: " + Lists);
+            document.writeln("<br>Subjects: " + subjects);
+            console.log("Length of lists: " + Lists.length);
+            Lists.splice(3,0,'Dates');
+            document.writeln("<br>Lists: " + Lists);
+            let arr = Lists.concat(subjects);
+            document.writeln("<br>Concatenated Array: " + arr);
+        </script>
+    </body>
+</html>
