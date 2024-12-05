@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            let arr1 = new Array(1, 2, 3, 4, 5, 6, 7);
+            let arr2 = ["a", "b", "c", "d", "e", "f", "g"];
+            document.writeln("Array 1: " + arr1);
+            document.writeln("<br>Array 2: " + arr2);
+            arr1.push(8);
+            document.writeln("<br>After pushing 8 into Array 1: " + arr1);
+            arr1.pop();
+            document.writeln("<br>After popping from Array 1: " + arr1);
+            arr2.splice(3, 0, " ", "x", "y", "z", " ");
+            document.writeln(
+                "<br>After inserting 'x', 'y', 'z' at index 2 in Array 2: " +
+                    arr2
+            );
+            let arr3 = arr1.concat(arr2);
+            document.writeln("<br>Concatenated Array 1 and Array 2: " + arr3);
+            arr1.unshift(0);
+            document.writeln(
+                "<br>After pushing 9 into Array 1 at the beginning: " + arr1
+            );
+            arr1.shift();
+            document.writeln(
+                "<br>After removing the first element from Array 1: " + arr1
+            );
+            arr2.toString();
+            document.writeln("<br>Array 2 as a string: " + arr2);
+            let arr4 = arr1.sort();
+            document.writeln("<br>Sorted Array 1: " + arr4);
+        </script>
+    </body>
+</html>
