@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            function myDog(name, color, breed) {
+                this.name = name;
+                this.color = color;
+                this.breed = breed;
+                this.bark = () => {
+                    document.writeln("<br>Woof!");
+                };
+                this.display = function () {
+                    document.writeln(
+                        `Name: ${this.name}, Color: ${this.color}, Breed: ${this.breed}`
+                    );
+                };
+            }
+
+            let doggy = new myDog("Max", "Black", "Golden Retriever");
+            doggy.display(); // Output: Name: Max, Color: Black, Breed: Golden Retriever
+            doggy.bark(); // Output: Woof!
+        </script>
+    </body>
+</html>
