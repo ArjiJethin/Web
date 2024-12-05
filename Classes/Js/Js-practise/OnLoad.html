@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script>
+            function showInfo() {
+                document.write(
+                    `you are using the ${navigator.userAgent} browser`
+                );
+            }
+
+            function closing() {
+                console.log("closing");
+                confirm("Are you sure you want to close this page?");
+            }
+        </script>
+    </head>
+    <body onload="showInfo()" onunload="closing()"></body>
+</html>
