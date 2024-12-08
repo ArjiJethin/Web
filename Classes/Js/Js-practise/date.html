@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let date = new Date();
+            document.writeln(date);
+            let year = date.getFullYear();
+            document.writeln("<br>" + year);
+            let month = date.getMonth() + 1;
+            document.writeln("<br>" + month);
+            let day = date.getDate();
+            let days = [
+                "Sunday",
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+            ];
+            document.writeln("<br>" + days[day - 1]);
+            let hours = date.getHours();
+            document.writeln("<br>" + hours);
+            let minutes = date.getMinutes();
+            document.writeln("<br>" + minutes);
+            let seconds = date.getSeconds();
+            document.writeln("<br>" + seconds);
+        </script>
+    </body>
+</html>

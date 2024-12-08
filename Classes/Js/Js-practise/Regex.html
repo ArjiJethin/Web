@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let text =
+                "Java Script Programming is the Core of Web development programming";
+            document.writeln(text.search(/core/i));
+            document.writeln("<br>" + text.replace(/ /g, "_"));
+            document.writeln("<br>" + text.match(/is/));
+            console.log(text.match(/is/g));
+            document.writeln("<br>" + text.match(/[a-e]/g));
+            console.log(text.match(/[a-e]/g));
+        </script>
+    </body>
+</html>
