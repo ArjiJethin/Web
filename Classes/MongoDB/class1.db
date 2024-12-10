@@ -86,4 +86,14 @@ m2Server> db.quanta.find()
     index: '05'
   }
 ]
+m2Server> db.quanta.find({name:"packet1"})
+[
+  { _id: ObjectId('67580e71fcec1bdf97893bf8'), name: 'packet1' },
+  {
+    _id: ObjectId('67580ebcfcec1bdf97893bf9'),
+    name: 'packet1',
+    src: 'spct',
+    index: '02'
+  }
+]
 m2Server>
