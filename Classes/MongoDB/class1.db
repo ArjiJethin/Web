@@ -1,0 +1,89 @@
+Microsoft Windows [Version 10.0.26100.2454]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\arjij>mongosh
+Current Mongosh Log ID: 67580b9bfcec1bdf97893bf7
+Connecting to:          mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.3.4
+Using MongoDB:          8.0.4
+Using Mongosh:          2.3.4
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+------
+   The server generated these startup warnings when booting
+   2024-12-10T15:04:51.795+05:30: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+------
+
+test> show dbs
+admin   40.00 KiB
+config  72.00 KiB
+local   72.00 KiB
+test> use m2Server
+switched to db m2Server
+m2Server> db.createcollection("quanta")
+TypeError: db.createcollection is not a function
+m2Server> db.createCollection("quanta")
+{ ok: 1 }
+m2Server> show dbs
+admin      40.00 KiB
+config    108.00 KiB
+local      72.00 KiB
+m2Server    8.00 KiB
+m2Server> db.quanta.insertOne({name:"packet1"})
+{
+  acknowledged: true,
+  insertedId: ObjectId('67580e71fcec1bdf97893bf8')
+}
+m2Server> db.quanta.insertOne({name:"packet1",src:"spct",index:"02"})
+{
+  acknowledged: true,
+  insertedId: ObjectId('67580ebcfcec1bdf97893bf9')
+}
+m2Server> db.quanta.find()
+[
+  { _id: ObjectId('67580e71fcec1bdf97893bf8'), name: 'packet1' },
+  {
+    _id: ObjectId('67580ebcfcec1bdf97893bf9'),
+    name: 'packet1',
+    src: 'spct',
+    index: '02'
+  }
+]
+m2Server> db.quanta.insertMany([{name:"packet2",src:"spct",index:"03"},{name:"packet3",src:"spct",index:"04"},{name:"packet4",src:"spct",index:"05"}])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('67581080fcec1bdf97893bfa'),
+    '1': ObjectId('67581080fcec1bdf97893bfb'),
+    '2': ObjectId('67581080fcec1bdf97893bfc')
+  }
+}
+m2Server> db.quanta.find()
+[
+  { _id: ObjectId('67580e71fcec1bdf97893bf8'), name: 'packet1' },
+  {
+    _id: ObjectId('67580ebcfcec1bdf97893bf9'),
+    name: 'packet1',
+    src: 'spct',
+    index: '02'
+  },
+  {
+    _id: ObjectId('67581080fcec1bdf97893bfa'),
+    name: 'packet2',
+    src: 'spct',
+    index: '03'
+  },
+  {
+    _id: ObjectId('67581080fcec1bdf97893bfb'),
+    name: 'packet3',
+    src: 'spct',
+    index: '04'
+  },
+  {
+    _id: ObjectId('67581080fcec1bdf97893bfc'),
+    name: 'packet4',
+    src: 'spct',
+    index: '05'
+  }
+]
+m2Server>
