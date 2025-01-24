@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
         <link rel="icon" href="path" />
+        <link rel="stylesheet" href="pracise1.css" />
     </head>
     <body>
         <h2>Lists:-</h2>
@@ -30,50 +31,124 @@
             <dd>Definition Description 3</dd>
         </dl>
 
-        <table border="1" width="750px">
-            <tr align="center">
-                <th>Day/Time</th>
-                <th>9:00-10:00</th>
-                <th>10:00-11:00</th>
-                <th>11:00-12:00</th>
-                <th>12:00-2:00</th>
-                <th>2:00-3:00</th>
-                <th>3:00-4:00</th>
-            </tr>
-            <tr align="center">
-                <th>Monday</th>
-                <td>Period 1</td>
-                <td rowspan="6">Short Break</td>
-                <td>Period 2</td>
-                <td rowspan="6">Lunch Break</td>
-                <td colspan="2">Sports</td>
-            </tr>
-            <tr align="center">
-                <th>Tuesday</th>
-                <td>Period 1</td>
-                <td>Period 2</td>
-                <td>Period 3</td>
-                <td>Period 4</td>
-            </tr>
-            <tr align="center">
-                <th>Wednesday</th>
-                <td>Period 1</td>
-                <td>Period 2</td>
-                <td colspan="2">Sports</td>
-            </tr>
-            <tr align="center">
-                <th>Thursday</th>
-                <td>Period 1</td>
-                <td>Period 2</td>
-                <td>Period 3</td>
-                <td>Period 4</td>
-            </tr>
-            <tr align="center">
-                <th>Friday</th>
-                <td>Period 1</td>
-                <td>Period 2</td>
-                <td colspan="2">Sports</td>
-            </tr>
-        </table>
+        <br />
+        <br />
+
+        <h2>Tables:-</h2>
+        <div style="display: flex; justify-content: center">
+            <table border="1" width="750px">
+                <tr align="center">
+                    <th>Day/Time</th>
+                    <th>9:00-10:00</th>
+                    <th>10:00-11:00</th>
+                    <th>11:00-12:00</th>
+                    <th>12:00-2:00</th>
+                    <th>2:00-3:00</th>
+                    <th>3:00-4:00</th>
+                </tr>
+                <tr align="center">
+                    <th>Monday</th>
+                    <td>Period 1</td>
+                    <td class="short" rowspan="6">Short Break</td>
+                    <td>Period 2</td>
+                    <td rowspan="6" class="lunch">Lunch Break</td>
+                    <td colspan="2" class="sports">Sports</td>
+                </tr>
+                <tr align="center">
+                    <th>Tuesday</th>
+                    <td>Period 1</td>
+                    <td>Period 2</td>
+                    <td>Period 3</td>
+                    <td>Period 4</td>
+                </tr>
+                <tr align="center">
+                    <th>Wednesday</th>
+                    <td>Period 1</td>
+                    <td>Period 2</td>
+                    <td class="sports" colspan="2">Sports</td>
+                </tr>
+                <tr align="center">
+                    <th>Thursday</th>
+                    <td>Period 1</td>
+                    <td>Period 2</td>
+                    <td>Period 3</td>
+                    <td>Period 4</td>
+                </tr>
+                <tr align="center">
+                    <th>Friday</th>
+                    <td>Period 1</td>
+                    <td>Period 2</td>
+                    <td class="sports" colspan="2">Sports</td>
+                </tr>
+            </table>
+        </div>
+        <br />
+        <br />
+        <h2>Forms:-</h2>
+        <form style="display: flex; justify-content: center">
+            <fieldset
+                style="
+                    width: 400px;
+                    align-content: center;
+                    border: solid red 2px;
+                    padding: 40px;
+                "
+            >
+                <legend align="center">Form</legend>
+                <label for="name">Name:</label>
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    maxlength="26"
+                    id="name"
+                />
+                <br />
+                <br />
+                <label for="id">Id:</label>
+                <input type="number" id="id" />
+                <br />
+                <br />
+                <label for="radio">Choose and Option:-</label>
+                <input type="radio" id="radio1" name="radio" value="option1" />
+                <label for="radio1">Option 1</label>
+                <input type="radio" id="radio2" name="radio" value="option2" />
+                <label for="radio2">Option 2</label>
+                <br />
+                <br />
+                <label for="checkbox">Select Multiple Options:-</label>
+                <input
+                    type="checkbox"
+                    id="checkbox1"
+                    name="checkbox"
+                    value="option1"
+                />
+                <label for="checkbox1">Option 1</label>
+                <input
+                    type="checkbox"
+                    id="checkbox2"
+                    name="checkbox"
+                    value="option2"
+                />
+                <label for="checkbox2">Option 2</label>
+                <br />
+                <br />
+                <input class="submit" type="submit" value="submit" />
+            </fieldset>
+        </form>
+        <audio
+            src="Media/Nightcore - Seven Days (Lyrics).mp3"
+            type="audio/mp3"
+            controls
+            align="center"
+        >
+            The Browser doesnt support Audio
+        </audio>
+        <video controls autoplay>
+            <source
+                src="https://video-previews.elements.envatousercontent.com/39a278b2-3ac2-4494-a01e-ab420a758e45/watermarked_preview/watermarked_preview.mp4"
+                type="video/mp4"
+            />
+            The Browser doesnt support Video
+        </video>
     </body>
 </html>

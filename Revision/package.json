@@ -1,0 +1,16 @@
+{
+  "name": "soe",
+  "version": "1.0.0",
+  "description": "<p style=\"color: red\">\r   Link:\r   <a style=\"color: red\" href=\"https://arjijethin.github.io/Web/\" target=\"_blank\"\r     >Click Here</a\r   >\r </p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node": "^22.13.0"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Registration Form</title>
+        <style>
+            * {
+                font-family: Arial, sans-serif;
+                margin: 10px;
+            }
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 25vh;
+            }
+            .container img {
+                margin-right: 20px;
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            fieldset {
+                width: 300px;
+                border-radius: 20px;
+            }
+            table {
+                width: 100%;
+            }
+            th,
+            td {
+                text-align: left;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <img
+                src="gettyimages-1327018449-612x612-removebg-preview.png"
+                height="200px"
+                alt="Mah Company"
+            />
+            <form action="post">
+                <fieldset>
+                    <legend align="center">Registration Form</legend>
+                    <table border="0">
+                        <tr>
+                            <th><label for="name">Name: </label></th>
+                            <td><input type="text" id="name" /></td>
+                        </tr>
+                        <tr>
+                            <th><label for="address">Address:</label></th>
+                            <td><input type="text" id="address" /></td>
+                        </tr>
+                        <tr>
+                            <th><label for="phno">Ph. No:</label></th>
+                            <td><input id="phno" type="tel" /></td>
+                        </tr>
+                        <tr>
+                            <th><label for="mail">Mail Id:</label></th>
+                            <td><input type="email" id="mail" /></td>
+                        </tr>
+                        <tr>
+                            <th><label for="gender">Gender:</label></th>
+                            <td><input type="text" id="gender" /></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+/* Apply contents of the table with blue color, 12pt and Arial font */
+table {
+    color: blue;
+    font-size: 12pt;
+    font-family: Arial, sans-serif;
+}
+
+/* Class selector for table applying border styles */
+.table-bordered {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid black;
+}
+
+/* Class selector for button applying rounded corners */
+.button-rounded {
+    border-radius: 12px;
+}
+
+/* Id selector for ordered list applying lower roman */
+#ordered-list {
+    list-style-type: lower-roman;
+}
+
+/* Generic selector applying color blue, padding of 5px, margin of 2px and Times New Roman font */
+* {
+    color: blue;
+    padding: 5px;
+    margin: 2px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Universal selector applying color black, font weight 800, aligning text to left */
+* {
+    color: black;
+    font-weight: 800;
+    text-align: left;
+}
