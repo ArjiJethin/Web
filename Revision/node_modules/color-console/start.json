@@ -1,0 +1,14 @@
+{
+  "server": {
+    "port": 3000,
+    "host": "./"
+  },
+  "compile": {
+    "jade": {
+      "input": "./test/*.jade",
+      "output": "./test/",
+      "pretty": true
+    }
+  },
+  "liverefresh": "./"
+}

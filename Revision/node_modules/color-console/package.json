@@ -1,0 +1,22 @@
+{
+  "name": "color-console",
+  "description": "Print colorful text in console.",
+  "version": "0.0.1",
+  "author": "Shallker <imshallker@gmail.com>",
+  "main": "index.js",
+  "keywords": [
+    "test"
+  ],
+  "homepage": "https://github.com/shallker/color-console",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shallker/color-console.git"  
+  },
+  "bugs": {
+    "url": "https://github.com/shallker/color-console/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {},
+  "license": "MIT"
+}
